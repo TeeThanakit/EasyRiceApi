@@ -1,0 +1,91 @@
+{
+    "name": "Jasmine Rice Quality Inspection",
+    "createDate": "2024-11-12T11:44:22.667Z",
+    "updateDate": "2025-12-12T11:12:22.667Z",
+    "inspectionID": "INS-20241112-001",
+    "standardID": "STD-22000",
+    "note": "Inspection conducted for quality assurance under ISO standards.",
+    "standardName": "ISO 22000 Quality Control",
+    "samplingDate": "2024-11-12T10:00:00.000Z",
+    "samplingPoint": [
+      "Frontend","Other"
+    ],
+    "price": 1534.75,
+    "totalSample": "42 Kernal",
+    "imageLink": "https://example.com/images/inspection_001.jpg",
+    "standardData": [
+      {
+        "key": "MC-001",
+        "minLength": 1,
+        "maxLength": 5,
+        "shape": [
+             "Whole Grain"
+        ],
+        "length": ">= 7 mm",
+        "actual": 85.0,
+        "name": "Moisture Content",
+        "conditionMin": "GE",
+        "conditionMax": "LE",
+        "value": 13.0
+      },
+      {
+        "key": "PC-002",
+        "minLength": 1,
+        "maxLength": 5,
+        "shape": [
+          "Large Broken Rice"
+        ],
+        "length": "3.5 - 6.99 mm",
+        "actual": 8.2,
+        "name": "Protein Content",
+        "conditionMin": "GE",
+        "conditionMax": "LE",
+        "value": 7.5
+      },
+      {
+        "key": "BR-003",
+        "minLength": 1,
+        "maxLength": 5,
+        "shape": [
+            "Small Broken Rice"
+        ],
+        "length": "0 - 3.49 mm",
+        "actual": 6.3,
+        "name": "Broken Rice Content",
+        "conditionMin": "GE",
+        "conditionMax": "LE",
+        "value": 6.3
+      }
+    ],
+    "defectRice": [
+      {
+        "name": "yellow",
+        "actual": 3.1
+      },
+      {
+        "name": "paddy",
+        "actual": 1.4
+      },
+      {
+        "name": "damaged",
+        "actual": 0.5
+      },
+      {
+        "name": "glutinous",
+        "actual": 2.67
+      },
+      {
+        "name": "chalky",
+        "actual": 3.14
+      },
+      {
+        "name": "red",
+        "actual": 89.6
+      },
+      {
+        "name": "Total",
+        "actual": 45.45
+      }
+    ]
+  }
+  
