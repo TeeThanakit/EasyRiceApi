@@ -1,0 +1,35 @@
+Table standard {
+  Id int [pk]
+  name varchar
+  created_at timestamp
+}
+
+Table sub_standard {
+  Id int [pk]
+  name varchar
+  maxLength float
+  minLength float
+  conditionMax varchar
+  conditionMin varchar
+  actual float
+  shape text[][]
+  type text[][]
+  standardId int [ref:  > standard.Id]
+}
+
+Table rice_inspection {
+  inspectionId int [pk]
+  name varchar
+  standardId int [ ref: > standard.Id]
+  note varchar
+  price float
+  samplingDate date
+  created_at timestamp
+  update_at timestamp
+
+}
+
+Table samplingPoints {
+  id int [pk ,ref: > rice_inspection.inspectionId]
+  samplingPoints text[]
+}
